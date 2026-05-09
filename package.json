@@ -1,0 +1,30 @@
+{
+  "name": "repo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.4",
+  "type": "module",
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "dev:client": "pnpm --filter @repo/client dev",
+    "dev:panel": "pnpm --filter @repo/panel dev",
+    "build:client": "pnpm --filter @repo/client build",
+    "build:panel": "pnpm --filter @repo/panel build",
+    "lint": "pnpm --recursive lint",
+    "build": "pnpm --recursive build"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "next": "16.2.6",
+    "prettier": "^3.8.3",
+    "tailwindcss": "^4",
+    "typescript": "^6.0.3"
+  }
+}
