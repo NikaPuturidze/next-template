@@ -1,0 +1,24 @@
+{
+  "name": "@repo/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./api": "./src/api.ts",
+    "./http": "./src/http.ts",
+    "./lib/utils": "./src/lib/utils.ts",
+    "./lib/*": "./src/lib/*.ts",
+    "./query-client": "./src/query-client.ts",
+    "./query-provider": "./src/query-provider.tsx"
+  },
+  "peerDependencies": {
+    "react": ">=19"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.12",
+    "axios": "^1.13.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+  }
+}

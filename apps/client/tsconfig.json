@@ -21,7 +21,11 @@
     "paths": {
       "@/*": ["./src/*"],
       "@client/*": ["./src/*"],
-      "@panel/*": ["../panel/src/*"]
+      "@panel/*": ["../panel/src/*"],
+      "@repo/shared": ["../../packages/shared/src/index.ts"],
+      "@repo/shared/*": ["../../packages/shared/src/*"],
+      "@repo/ui": ["../../packages/ui/src/index.ts"],
+      "@repo/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": [
